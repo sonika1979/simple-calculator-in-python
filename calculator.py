@@ -1,28 +1,28 @@
-a= input("enter a\n")
-x = int (a)
-print("a=",x)
-b = input("enter b\n")
-y = int(b)
-print("b=",y)
-print("enter which operation from 0-4 which has to be performed:")
-i = input()
-j = int(i)
-if j==0:
-    r=x+y
+int a= input("enter a\n")
+
+print("a=",a)
+int b = input("enter b\n")
+
+print("b=",b)
+print("enter which operation from 0-4 which has to be performed:/n 1.add/n2.sub/n3.mult/n4.div/n")
+int option = input()
+
+if option==0:
+    r=a+b
     print("sum=",r)
-elif j==1:
-    r=x-y
+elif option==1:
+    r=a-b
     print("difference=",r)
-elif j==2:
-    r=x*y
+elif option==2:
+    r=a*b
     print("product=",r)
-elif j==3:
-    r=x//y
-    p=x%y
+elif option==3:
+    r=a//b
+    p=a%b
     print("quotient=",r)
     print("remainder=",p)
-elif j==4:
-    r=x**y
+elif option==4:
+    r=a**b
     print("a raised to b=",r)
 else:
     print("wrong selection. check ur options")
